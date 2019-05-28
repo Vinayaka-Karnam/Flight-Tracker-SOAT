@@ -11,9 +11,9 @@ app.set('view engine', 'html');
 
 var connection = mysql.createConnection({
     host: "localhost",
-    user: "root",
-    password: "",
-    database: "mywebsite"
+    user: "karnamv",
+    password: "Vimala1~",
+    database: "SSID"
 });
 
 connection.connect();

@@ -9,7 +9,7 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 $id = $_REQUEST["flightnumber"];
-$flightnumber=mt_rand(1,2);
+$flightnumber=mt_rand(1,7);
 
 $result = mysqli_query($con,"SELECT * FROM FLIGHTS WHERE ID='".$flightnumber."'");
 

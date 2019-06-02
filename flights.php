@@ -28,7 +28,9 @@ $_POST["postdata"] = $str;
 mysqli_close($con);
 ?>
 <form method="post" action="message.php" id="senddata">
-      <input type="Submit" name="postdata" value="Send sms <?php print_r($str); ?>">  
+      <input type="Submit" name="postdata" value="Send sms">  
+      <input type="hidden" name="post1data" value="<?php print_r($str); ?>">  
+
 </form> 
 <div id="google_translate_element"></div>
 

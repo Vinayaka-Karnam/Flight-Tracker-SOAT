@@ -1,17 +1,19 @@
 <html>
     <head>
+      <link rel="stylesheet" href="flight1.css">
         <body>
+          <div id="background">
+                    <img src="cloud.jpg" class="stretch" alt="" />
+                </div>
 <?php
 
 $str= $_POST['post1data'];
 //$sr="sh ./message.sh ".$str;
 $output = shell_exec("sh ./message.sh"." ".$str) ;
 //echo $output;
-echo "message sent";
-
-
+echo "<h3>Message Succesfully Sent!!<h3>";
 echo"<br>";
-echo $str;
+echo "<h1>".$str."</h1>";
 
 ?>
 <div id="google_translate_element"></div>
@@ -30,4 +32,3 @@ function googleTranslateElementInit() {
         </body>
     </head>
 </html>
-
